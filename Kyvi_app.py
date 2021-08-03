@@ -10,7 +10,7 @@ class ChildApp(GridLayout):
 
     def __init__(self, **kwargs):
         super(ChildApp, self).__init__()
-        self.cols = 2
+        self.cols = 5
 
         self.add_widget(Label(text='User Name'))
         self.user_name = TextInput()
