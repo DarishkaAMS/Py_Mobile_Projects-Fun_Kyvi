@@ -1,4 +1,10 @@
 <MySecondGrid>
+
+    first_name: first_name
+    last_name: last_name
+    email: email
+    dream: dream
+
     GridLayout:
         cols:1
         size: root.width, root.height
@@ -6,20 +12,25 @@
         GridLayout:
             cols:2
             Label:
-                text: "Firstname: "
+                text: "First name: "
             TextInput:
+                id: first_name
                 multiline: False
             Label:
-                text: "Second name: "
+                text: "Last name: "
             TextInput:
+                id: last_name
                 multiline: False
             Label:
                 text: "E-Mail: "
             TextInput:
+                id: email
                 multiline: False
             Label:
                 text: "Dream: "
             TextInput:
+                id: dream
                 multiline: False
         Button:
             text:"Submit"
+            on_press: root.press_btn()
