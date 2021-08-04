@@ -25,10 +25,10 @@ class MySecondGrid(GridLayout):
         self.dream.text = ""
 
 
-class DarishkaAMSApp(App):
+class SecondApp(App):
     def build(self):
         return MySecondGrid()
 
 
 if __name__ == "__main__":
-    DarishkaAMSApp().run()
+    SecondApp().run()
