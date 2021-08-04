@@ -1,3 +1,25 @@
 <MySecondGrid>
-    Label:
-        text: "Good morning from DarishkaAMS"
+    GridLayout:
+        cols:1
+        size: root.width, root.height
+
+        GridLayout:
+            cols:2
+            Label:
+                text: "Firstname: "
+            TextInput:
+                multiline: False
+            Label:
+                text: "Second name: "
+            TextInput:
+                multiline: False
+            Label:
+                text: "E-Mail: "
+            TextInput:
+                multiline: False
+            Label:
+                text: "Dream: "
+            TextInput:
+                multiline: False
+        Button:
+            text:"Submit"
